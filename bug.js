@@ -1,0 +1,1 @@
+This bug occurs when using Tailwind CSS with a framework like Next.js or Nuxt.js that uses server-side rendering (SSR).  If you have a component that uses Tailwind classes conditionally, and the condition isn't met on the server-side but *is* met on the client-side, Tailwind's purge process may remove the unused classes, resulting in broken styles on the client.
